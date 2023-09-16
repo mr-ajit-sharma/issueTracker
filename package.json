@@ -1,0 +1,29 @@
+{
+  "name": "issue-tracker-main",
+  "version": "1.0.0",
+  "description": "these is used to track the bugs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mr-ajit-sharma"
+  },
+  "keywords": [
+    "test",
+    "tracker",
+    "bugs",
+    "issues"
+  ],
+  "author": "ajit sharma",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^7.5.1",
+    "nodemon": "^3.0.1"
+  }
+}

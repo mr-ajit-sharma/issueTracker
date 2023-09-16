@@ -1,0 +1,29 @@
+<div class="card m-auto text-bg-dark " style="max-width: 540px;">
+
+  <div class=" text-bg-dark">
+    <div class="card-body d-flex">
+      <h5 class="card-title text-danger text-decoration-underline">Name of Project :- </h5>
+      <p class="card-text">
+        <%=project.name%>
+      </p>
+    </div>
+  
+  <div class=" text-bg-dark">
+    <div class="card-body d-flex">
+      <h5 class="card-title text-danger text-decoration-underline">Description :-</h5>
+      <p class="card-text">
+        <%= project.description%>
+      </p>
+    </div>
+  </div>
+  <div class=" text-bg-dark">
+    <div class="card-body d-flex">
+      <h5 class="card-title text-danger text-decoration-underline">Author :- </h5>
+      <p class="card-text">
+        <%= project.author%>
+      </p>
+    </div>
+  </div>
+    
+</div>
+<%-include('./partials/_issues') %>
