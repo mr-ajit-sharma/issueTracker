@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const url = 'mongodb://0.0.0.0:27017/issueTracker';
+// const url = 'mongodb+srv://sharmaajit80437:sharma@cluster1.orxztcu.mongodb.net/?retryWrites=true&w=majority';
+const url='mongodb://0.0.0.0:27017/issueTracker'
 // mongoose.connect('url') 
 mongoose.connect(url);
 const db=mongoose.connection;

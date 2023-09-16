@@ -1,3 +1,5 @@
+const Issue = require("../../models/issue");
+
 //get the form
 let searchIssueForm = document.getElementById('search-issue-form');
 // get the details of the issues of the project in json
@@ -27,6 +29,7 @@ searchIssueForm.addEventListener('submit', function (e) {
       }
     }
   });
+  console.log(issue)
   //create a div and add details of the searched issues
   searchList.innerHTML = '';
   for (let issue of searchedIssues) {
