@@ -1,9 +1,9 @@
 // require('dotenv').config();  //Load Env
 const express = require('express');
-
+const env=require('dotenv')
 const db = require('./config/mongoose');
 const mongodb=require('mongodb')
-const port = 8000;
+const port = process.env.PORT ||8000;
 const app = express();
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');

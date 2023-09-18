@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-// const url = 'mongodb+srv://sharmaajit80437:sharma@cluster1.orxztcu.mongodb.net/?retryWrites=true&w=majority';
-const url='mongodb://0.0.0.0:27017/issueTracker'
-// mongoose.connect('url') 
+const env=require('dotenv')
+const url = process.env.URL;
+
 mongoose.connect(url);
 const db=mongoose.connection;
 
