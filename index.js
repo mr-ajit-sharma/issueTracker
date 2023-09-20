@@ -1,4 +1,4 @@
-// require('dotenv').config();  //Load Env
+require('dotenv').config();  //Load Env
 const express = require('express');
 const env=require('dotenv').config()
 const db = require('./config/mongoose');
@@ -8,7 +8,7 @@ const app = express();
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
 app.use(express.static('assets'));
 app.use(expressLayouts);
 
